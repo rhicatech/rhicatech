@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhica Tech</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="logo.JPG">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo.jpg" alt="Rhica Tech Logo">
+        <span class="company-name"> <b>Rhica</b> Tech</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero" style="background-image: url('hero2.jpg'); background-repeat:no-repeat;">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeInLeft">Innovative Medical Solutions</h2>
+      <p class="animate__animated animate__fadeInRight">Transforming healthcare with cutting-edge technology.</p>
+      <a href="#services" class="btn animate__animated animate__fadeInUp">Explore Our Services</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeIn">About Us</h2>
+      <div class="about-content">
+        <img src="about-us.jpg" alt="About Us" class="animate__animated animate__fadeInLeft">
+        <p class="animate__animated animate__fadeInRight">At Rhica Tech, we are a passionate and dedicated team of experts committed to revolutionizing the medical industry through innovative technological solutions. Our mission is to enhance patient care, streamline healthcare processes, and empower medical professionals with cutting-edge tools that make a tangible difference in people's lives.</p>
+        <div id="more-content" class="hidden">
+          <p>With a deep understanding of the challenges faced by the healthcare sector, we focus on developing solutions that are not only advanced but also practical, accessible, and user-friendly. From telemedicine platforms that connect patients and doctors seamlessly to AI-powered diagnostic tools that improve accuracy and efficiency, our work is driven by a singular goal: to transform healthcare delivery for the better.</p>
+          <p>We believe that technology has the power to bridge gaps, eliminate inefficiencies, and create a more equitable healthcare system. Our team comprises skilled engineers, data scientists, healthcare professionals, and designers who collaborate to create solutions tailored to the unique needs of the medical community. Whether it's developing intuitive software for medical data analytics, designing secure platforms for remote patient monitoring, or leveraging artificial intelligence to predict and prevent health issues, we are at the forefront of innovation. Every product we create is rooted in research, tested for reliability, and designed with the end-user in mind.</p>
+          <p>At the heart of our work is a commitment to improving patient outcomes. We understand that behind every data point and every line of code is a person seeking better health and well-being. That’s why we prioritize solutions that are not only technologically advanced but also compassionate and patient-centric. By streamlining administrative processes, reducing wait times, and enabling faster, more accurate diagnoses, we aim to make healthcare more efficient and accessible for everyone.</p>
+          <p>Our vision extends beyond just creating tools; we strive to build a future where technology and healthcare are seamlessly integrated, where medical professionals can focus on what they do best—caring for patients—while our solutions handle the rest. Together, we are shaping a healthier, more connected world, one innovation at a time.</p>
+        </div>
+        <button id="read-more-btn" class="btn">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeIn">Our Services</h2>
+      <div class="service-list">
+        <div class="service-item animate__animated animate__fadeInUp">
+          <i class="fas fa-video fa-3x"></i>
+          <h3>Telemedicine Platforms</h3>
+          <p>Connect patients and doctors seamlessly.</p>
+        </div>
+        <div class="service-item animate__animated animate__fadeInUp animate__delay-1s">
+          <i class="fas fa-chart-line fa-3x"></i>
+          <h3>Medical Data Analytics</h3>
+          <p>Harness the power of data for better decision-making.</p>
+        </div>
+        <div class="service-item animate__animated animate__fadeInUp animate__delay-2s">
+          <i class="fas fa-robot fa-3x"></i>
+          <h3>AI Diagnostics</h3>
+          <p>Revolutionizing diagnostics with artificial intelligence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeIn">Portfolio</h2>
+      <div class="portfolio-gallery">
+        <div class="portfolio-item animate__animated animate__fadeInLeft">
+          <img src="project-1.png" alt="Project 1">
+          <p>Telemedicine App</p>
+        </div>
+        <div class="portfolio-item animate__animated animate__fadeInUp">
+          <img src="project-2.png" alt="Project 2">
+          <p>AI Diagnostic Tool</p>
+        </div>
+        <div class="portfolio-item animate__animated animate__fadeInRight">
+          <img src="project-3.png" alt="Project 3">
+          <p>Healthcare Analytics Dashboard</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeIn">Contact Us</h2>
+      <form id="contact-form" class="animate__animated animate__fadeInUp">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Rhica Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

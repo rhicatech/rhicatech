@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins to the entire website */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Dark gray for text */
+    background: #fff; /* White background */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+/* Header and Navbar Styles */
+/* Header and Navbar Styles */
+header {
+  background: #fff; /* White background for navbar */
+  color: #000; /* Black text for navbar */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow on the bottom border */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo and Company Name Styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Adjust the height of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.company-name {
+  font-size: 2.5rem; /* Adjust the font size */
+  margin-left: 10px; /* Space between logo and company name */
+  color: #000; /* Black text for company name */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #000; /* Black text for navigation links */
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000; /* Black underline for active link */
+  transition: width 0.3s ease;
+}
+
+nav ul li a.active::after {
+  width: 100%;
+}
+  .hero {
+    background: url('medical-bg.jpg') no-repeat center center/cover;
+    color: #fff; /* White text for hero section */
+    padding: 150px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background: #000; /* Black background for buttons */
+    color: #fff; /* White text for buttons */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #333; /* Dark gray on hover */
+  }
+  
+  .about, .services, .portfolio, .contact {
+    padding: 80px 0;
+  }
+  
+  .about h2, .services h2, .portfolio h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000; /* Black text for headings */
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-content img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    flex: 1 1 30%;
+    background: #f4f4f4; /* Light gray background for service items */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item i {
+    color: #000; /* Black icons */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .service-item:hover i {
+    color: #333; /* Dark gray on hover */
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact form input, .contact form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact form button {
+    background: #000; /* Black background for button */
+    color: #fff; /* White text for button */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact form button:hover {
+    background: #333; /* Dark gray on hover */
+  }
+  
+  footer {
+    background: #000; /* Black background for footer */
+    color: #fff; /* White text for footer */
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+
+  /* Hidden content for Read More */
+  .hidden {
+    display: none;
+  }
+  
+  /* Read More button */
+  #read-more-btn {
+    margin-top: 20px;
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #read-more-btn:hover {
+    background: #333; /* Dark gray on hover */
+  }
